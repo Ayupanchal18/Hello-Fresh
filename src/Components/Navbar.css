@@ -1,0 +1,64 @@
+.Navbar_container {
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  align-items: center;
+  z-index: 9999;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+.navlinks ul li {
+  list-style: none;
+  margin-left: 5px;
+  align-items: center;
+  padding: 19px 5px;
+}
+.navlinks ul li:hover {
+  cursor: pointer;
+  background-color: rgba(133, 248, 133, 0.474);
+  border-radius: 2px;
+}
+.navlinks ul {
+  display: flex;
+}
+.nav_left {
+  display: flex;
+  align-items: center;
+}
+
+.logoimg {
+  margin: 10px 10px;
+}
+
+.login_SignUp_Btn button {
+  height: 40px;
+  width: 100px;
+  background-color: white;
+  font-size: medium;
+  border: 2px solid green;
+  border-radius: 5px;
+  color: green;
+  font-weight: bold;
+}
+.login_SignUp_Btn button:hover {
+  cursor: pointer;
+  background-color: rgba(29, 247, 102, 0.184);
+}
+.login_SignUp_Btn {
+  margin-left: 540px;
+}
+@media only screen and (max-width: 800px) {
+  .logoimg img {
+    height: 25px;
+    width: 80px;
+  }
+  .navlinks ul {
+    display: none;
+  }
+  .login_SignUp_Btn {
+    margin-left: 200px;
+  }
+}
